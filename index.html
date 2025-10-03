@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Mobile App">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#000000">
+    
+    <title>Mobile App</title>
+    
+    <!-- PWA Icons - Optional, funktioniert auch ohne -->
+    <!-- <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="icons/icon-512x512.png">
+    <link rel="apple-touch-icon" href="icons/icon-192x192.png"> -->
+    
+    <!-- Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- App Container -->
+    <div id="app" class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="header-content">
+                <h1 class="app-title">Mobile App</h1>
+                <button class="menu-btn" id="menuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="app-nav" id="nav">
+            <ul class="nav-list">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="app-main">
+            <!-- Home Section -->
+            <section id="home" class="content-section active">
+                <div class="hero">
+                    <h2>Willkommen in unserer App!</h2>
+                    <p>Eine vollständige PWA-Erfahrung wie eine native App</p>
+                    <button class="cta-button">Jetzt starten</button>
+                </div>
+
+                <div class="features">
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h3>App-like Design</h3>
+                        <p>Vollständig responsive und app-ähnliches Design</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Schnell & Zuverlässig</h3>
+                        <p>Optimiert für beste Performance</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📲</div>
+                        <h3>Installierbar</h3>
+                        <p>Kann auf dem Homescreen installiert werden</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services Section -->
+            <section id="services" class="content-section">
+                <h2>Unsere Services</h2>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <h3>Service 1</h3>
+                        <p>Beschreibung des ersten Services</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Service 2</h3>
+                        <p>Beschreibung des zweiten Services</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Service 3</h3>
+                        <p>Beschreibung des dritten Services</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="content-section">
+                <h2>Über uns</h2>
+                <p>Hier steht Information über das Unternehmen oder die App.</p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-number">100+</span>
+                        <span class="stat-label">Zufriedene Kunden</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5★</span>
+                        <span class="stat-label">Bewertung</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Support</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="content-section">
+                <h2>Kontakt</h2>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-Mail</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Nachricht</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Senden</button>
+                </form>
+            </section>
+        </main>
+
+        <!-- Bottom Navigation -->
+        <nav class="bottom-nav">
+            <a href="#home" class="bottom-nav-item active">
+                <span class="nav-icon">🏠</span>
+                <span class="nav-label">Home</span>
+            </a>
+            <a href="#services" class="bottom-nav-item">
+                <span class="nav-icon">⚙️</span>
+                <span class="nav-label">Services</span>
+            </a>
+            <a href="#about" class="bottom-nav-item">
+                <span class="nav-icon">ℹ️</span>
+                <span class="nav-label">About</span>
+            </a>
+            <a href="#contact" class="bottom-nav-item">
+                <span class="nav-icon">📞</span>
+                <span class="nav-label">Contact</span>
+            </a>
+        </nav>
+    </div>
+
+    <!-- Install Banner -->
+    <div id="installBanner" class="install-banner hidden">
+        <div class="banner-content">
+            <span>App zum Homescreen hinzufügen?</span>
+            <div class="banner-actions">
+                <button id="installBtn" class="install-btn">Installieren</button>
+                <button id="dismissBtn" class="dismiss-btn">Später</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-spinner"></div>
+        <p>Loading...</p>
+    </div>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>

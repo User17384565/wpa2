@@ -1,0 +1,56 @@
+{
+  "name": "Mobile PWA App",
+  "short_name": "MobileApp",
+  "description": "Eine vollständige Progressive Web App mit nativer App-Erfahrung",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#667eea",
+  "theme_color": "#667eea",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "de",
+  "categories": ["productivity", "utilities"],
+  "icons": [],
+  "shortcuts": [
+    {
+      "name": "Home",
+      "short_name": "Home",
+      "description": "Zur Startseite",
+      "url": "/#home"
+    },
+    {
+      "name": "Services",
+      "short_name": "Services",
+      "description": "Unsere Services",
+      "url": "/#services"
+    },
+    {
+      "name": "Contact",
+      "short_name": "Contact",
+      "description": "Kontakt aufnehmen",
+      "url": "/#contact"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshots/mobile-1.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "screenshots/mobile-2.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ],
+  "prefer_related_applications": false,
+  "related_applications": [],
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+  }
+}
