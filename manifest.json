@@ -2,7 +2,7 @@
   "name": "Mobile PWA App",
   "short_name": "MobileApp",
   "description": "Eine vollständige Progressive Web App mit nativer App-Erfahrung",
-  "start_url": "/",
+  "start_url": "/wpa/",
   "display": "standalone",
   "background_color": "#667eea",
   "theme_color": "#667eea",
@@ -53,4 +53,5 @@
   "launch_handler": {
     "client_mode": "navigate-existing"
   }
+
 }
